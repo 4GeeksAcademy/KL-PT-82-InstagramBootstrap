@@ -24,102 +24,107 @@
         <a class="navbar-brand" href="#"
           ><i class="fa-brands fa-instagram"></i>Instagram</a
         >
-        <div class="navbar navbar-light justify-content-end">
+        <div class="navbar navbar-light">
           <ul class="navbar-nav">
-            <button
-              type="button"
-              class="btn btn-primary"
-              data-bs-toggle="modal"
-              data-bs-target="#exampleModal"
-              data-bs-whatever="@mdo"
-            >
-              Create a New Post
-            </button>
-            <div
-              class="modal fade"
-              id="exampleModal"
-              tabindex="-1"
-              aria-labelledby="exampleModalLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">
-                      New message
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form>
-                      <div class="mb-3">
-                        <label for="recipient-name" class="col-form-label"
-                          >Recipient:</label
-                        >
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="recipient-name"
-                        />
-                      </div>
-                      <div class="mb-3">
-                        <label for="message-text" class="col-form-label"
-                          >Message:</label
-                        >
-                        <textarea
-                          class="form-control"
-                          id="message-text"
-                        ></textarea>
-                      </div>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Send message
-                    </button>
+            <div class="d-flex justify-content-end">
+              <button
+                type="button"
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+              >
+                Create a New Post
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        Create New Post
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label"
+                            >Caption:</label
+                          >
+                          <textarea
+                            class="form-control"
+                            id="message-text"
+                          ></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div>
+                      <button type="button" class="btn border">
+                        <i class="fa-solid fa-camera"></i>
+                      </button>
+                      <button type="button" class="btn border">
+                        <i class="fa-solid fa-location-dot"></i>
+                      </button>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button type="button" class="btn btn-primary">
+                        Publish
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="fa-solid fa-gear"></i>
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Profile</a></li>
+                  <li><a class="dropdown-item" href="#">Accesibility</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Privacy & Settings</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Log Out</a></li>
+                </ul>
+              </li>
             </div>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                <i class="fa-solid fa-gear"></i>
-              </a>
-              <ul class="dropdown-menu ">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
           </ul>
         </div>
       </div>
     </nav>
 
-<!-- nav-tab -->
+    <!-- nav-tab -->
 
-
-    <ul class="nav nav-tabs" style="justify-content: center; align-items: center;" id="myTab" role="tablist">
+    <ul
+      class="nav nav-tabs"
+      style="justify-content: center; align-items: center"
+      id="myTab"
+      role="tablist"
+    >
       <li class="nav-item" role="presentation">
         <button
           class="nav-link active"
@@ -131,7 +136,7 @@
           aria-controls="grid-tab-pane"
           aria-selected="true"
         >
-         <i class="fa-solid fa-table-cells"></i>
+          <i class="fa-solid fa-table-cells"></i>
         </button>
       </li>
       <li class="nav-item" role="presentation">
@@ -145,12 +150,12 @@
           aria-controls="single-tab-pane"
           aria-selected="false"
         >
-        <i class="fa-regular fa-square"></i>
+          <i class="fa-regular fa-square"></i>
         </button>
       </li>
     </ul>
 
-<!-- grid-view -->
+    <!-- grid-view -->
 
     <div class="tab-content" id="myTabContent">
       <div
@@ -160,19 +165,142 @@
         aria-labelledby="grid-tab"
         tabindex="0"
       >
-        ...
+        <div class="container text-center">
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/137/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/237/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/337/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/437/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/537/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/637/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/737/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/837/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="https://picsum.photos/id/937/300/300"
+                alt="picture"
+                style="width: 100%; height: 300px; object-fit: cover; border: 0"
+                alt="Post Image"
+              />
+            </div>
+          </div>
+        </div>
       </div>
 
-<!-- single-view -->
-
-      <div
-        class="tab-pane fade"
-        id="single-tab-pane"
-        role="tabpanel"
-        aria-labelledby="single-tab"
-        tabindex="0"
-      >
-        ...
+      <!-- single-view -->
+        <div class="container">
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/337/300/300"
+              class="card-img-top"
+              alt="picture"
+            />
+            <div class="card-body">
+              <h5 class="card-title">First Photo</h5>
+              <p style="font-size: 16px"><strong> 1109 Likes</strong></p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                corrupti impedit, id magni similique, culpa accusantium
+                laboriosam excepturi laudantium veritatis saepe accusamus
+                incidunt architecto expedita. Sed minus velit modi quia.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/537/300/300"
+              class="card-img-top"
+              alt="picture"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Second Photo</h5>
+              <p style="font-size: 16px"><strong> 1176 Likes</strong></p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                corrupti impedit, id magni similique, culpa accusantium
+                laboriosam excepturi laudantium veritatis saepe accusamus
+                incidunt architecto expedita. Sed minus velit modi quia.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem">
+            <img
+              src="https://picsum.photos/id/937/300/300"
+              class="card-img-top"
+              alt="picture"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Third Photo</h5>
+              <p style="font-size: 16px"><strong> 1359 Likes</strong></p>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+                corrupti impedit, id magni similique, culpa accusantium
+                laboriosam excepturi laudantium veritatis saepe accusamus
+                incidunt architecto expedita. Sed minus velit modi quia.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
